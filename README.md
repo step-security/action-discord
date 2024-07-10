@@ -84,4 +84,4 @@ https://github.com/marketplace/actions/discord-message-notify <br/>
 </p>
 
 [build-badge]: https://img.shields.io/endpoint.svg?url=https%3A%2F%2Factions-badge.atrox.dev%2Fstep-security%2Faction-discord%2Fbadge&style=flat
-[build-url]: https://actions-badge.atrox.dev/step-security/action-discord/goto
+[build-url]: https://actions-badge.atrox.dev/step-security/action-discord/goto?ref=main
