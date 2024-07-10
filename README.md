@@ -83,5 +83,5 @@ https://github.com/marketplace/actions/discord-message-notify <br/>
   <a href="https://github.com/step-security/action-discord/issues/new">Your feedback is appreciated</a>
 </p>
 
-[build-badge]: https://img.shields.io/endpoint.svg?url=https%3A%2F%2Factions-badge.atrox.dev%2Fstep-security%2Faction-discord%2Fbadge&style=flat
+[build-badge]: https://img.shields.io/endpoint.svg?url=https%3A%2F%2Factions-badge.atrox.dev%2Fstep-security%2Faction-discord%2Fbadge%3Fref%3Dmain&style=flat
 [build-url]: https://actions-badge.atrox.dev/step-security/action-discord/goto?ref=main
