@@ -1,15 +1,7 @@
 # 🚀 Discord for GitHub Actions
 
-[![Build Status][build-badge]][build-url]
-
 Sends a Discord notification message. Simple as that.
 Supports all [workflow event types](https://developer.github.com/webhooks/#events) by using the [Discord GitHub webhooks](https://discordapp.com/developers/docs/resources/webhook#execute-githubcompatible-webhook).
-
-_Appearance on Discord :_
-
-![Discord message](preview.png "Discord message")
-
-This GitHub action is part of a list of Actions that are located in an other repo. Feel free to check it out : https://github.com/step-security/actions.
 
 ## Compatibility note
 
@@ -38,7 +30,7 @@ As this Action is containerized with Docker, [it can only run on Linux environme
 
 ### Arguments
 
-By default, the GitHub action will send a notificaction with the event informations. Providing the arguments will override the message.
+By default, the GitHub action will send a notification with the event information. Providing the arguments will override the message.
 
 **Environment variables** can be interpolated in the message using brackets (`{{` and `}}`) :
 
@@ -48,7 +40,7 @@ e.g.: `Action called : {{ GITHUB_ACTION }}`
 
 e.g.: `Action called: {{ GITHUB_ACTION }} as {{ EVENT_PAYLOAD.pull_request.id }}`
 
-> See the [event types](https://developer.github.com/v3/activity/events/types) for valid payload informations.
+> See the [event types](https://developer.github.com/v3/activity/events/types) for valid payload information.
 
 #### Examples
 
@@ -63,25 +55,3 @@ e.g.: `Action called: {{ GITHUB_ACTION }} as {{ EVENT_PAYLOAD.pull_request.id }}
 - **`DISCORD_AVATAR`** (_optional_): overrides the avatar URL.
 - **`DISCORD_EMBEDS`** (_optional_): This should be a valid JSON string of an array of Discord `embed` objects. See the [documentation on Discord WebHook Embeds](https://birdie0.github.io/discord-webhooks-guide/structure/embeds.html) for more information. You can use set it to `${{ toJson(my_value) }}` using [`toJson()`](https://docs.github.com/en/actions/reference/context-and-expression-syntax-for-github-actions#tojson) if your input is an object value.
 - That's all.
-
-## Alternatives
-
-Because open source is about everyone :
-
-https://github.com/marketplace/actions/discord-message-notify <br/>
-![](https://img.shields.io/github/stars/appleboy/discord-action.svg?label=Stars&style=social)
-
-## TODO
-
-- [Pass arguments with the `with` keyword](https://help.github.com/en/actions/automating-your-workflow-with-github-actions/workflow-syntax-for-github-actions#jobsjob_idstepswith)
-- Run outside of a container.
-
-<hr/>
-
-<p align="center">
-  Don't forget to 🌟 Star 🌟 the repo if you like this GitHub Action !<br/>
-  <a href="https://github.com/step-security/action-discord/issues/new">Your feedback is appreciated</a>
-</p>
-
-[build-badge]: https://img.shields.io/endpoint.svg?url=https%3A%2F%2Factions-badge.atrox.dev%2Fstep-security%2Faction-discord%2Fbadge%3Fref%3Dmain&style=flat
-[build-url]: https://actions-badge.atrox.dev/step-security/action-discord/goto?ref=main
