@@ -18,15 +18,10 @@ As this Action is containerized with Docker, [it can only run on Linux environme
 - name: Discord notification
   env:
     DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
-  uses: step-security/action-discord@main
+  uses: step-security/action-discord@0.3.2
   with:
     args: "The project {{ EVENT_PAYLOAD.repository.full_name }} has been deployed."
 ```
-
-**NOTICE :** for stability purposes, it is recommended to use the action with an explicit commit SHA-1 :
-
-- Version : `uses: "step-security/action-discord@0.3.2"` (&rarr; link to the releases list : https://github.com/step-security/action-discord/releases)
-- Commit SHA-1 : `uses: "step-security/action-discord@0c4b27844ba47cb1c7bee539c8eead5284ce9fa9"` (&rarr; link to the commits list : https://github.com/step-security/action-discord/commits/main)
 
 ### Arguments
 
