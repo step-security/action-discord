@@ -18,7 +18,7 @@ As this Action is containerized with Docker, [it can only run on Linux environme
 - name: Discord notification
   env:
     DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
-  uses: step-security/action-discord@0.3.2
+  uses: step-security/action-discord@v0.3.2
   with:
     args: "The project {{ EVENT_PAYLOAD.repository.full_name }} has been deployed."
 ```
