@@ -1,4 +1,4 @@
-FROM mhart/alpine-node:12.19.1@sha256:31eebb77c7e3878c45419a69e5e7dddd376d685e064279e024e488076d97c7e4
+FROM node:lts-alpine3.20@sha256:cf5e7b223dea2efc6a73c55c6655b740576fe9c2596927a53533feded0fb5f5f
 
 ADD package.json package-lock.json /
 RUN npm ci --production
