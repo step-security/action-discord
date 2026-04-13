@@ -11,4 +11,4 @@ inputs:
   # TODO: Handle configuration through Action inputs.
 runs:
   using: 'docker'
-  image: 'docker://ghcr.io/step-security/action-discord:v0.1.5@sha256:d44f7524e4e197be62d327b48f0d9c84e1bee65f977352b0276220e053f727bf' #v0.1.5
+  image: 'docker://ghcr.io/step-security/action-discord:v0.1.6@sha256:35cac4c7c875fc14ac178949538a9d3fd78fffb74045367b3bb136f064026904' #v0.1.6
