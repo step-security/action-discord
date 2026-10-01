@@ -1,4 +1,4 @@
-FROM node:25-alpine3.23@sha256:ad82ecad30371c43f4057aaa4800a8ed88f9446553a2d21323710c7b937177fc
+FROM node:26-alpine3.23@sha256:c3c6e314fd42e41962360b2482fc18d150beb47976c3aa7b8b9689d7ef42a5c2
 
 ADD package.json package-lock.json /
 RUN npm ci --production
